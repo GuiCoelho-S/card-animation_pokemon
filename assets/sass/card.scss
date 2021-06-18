@@ -71,7 +71,8 @@ h1 {
         gap:10px;
         div {
             display: none;
-            
+            animation: fade 1ms 0.4s forwards;
+            opacity: 0;
              p {
                 text-align: center;
                 font-family: arial;
@@ -134,5 +135,11 @@ h1 {
         transition-delay: 1s;
         display:block;
         transform-style: opacity;
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
     }
 }
